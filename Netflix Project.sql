@@ -97,12 +97,6 @@ GROUP BY 1
 ORDER BY 2 DESC LIMIT 10
 
 -- 15. Categorize Content Based on the Presence of 'Kill' and 'Violence' Keywords in the Description Field. Categorize content as 'Bad' if it contains 'kill' or 'violence' and 'Good' otherwise. Count the number of items in each category.
-SELECT * 
-FROM Netflix 
-WHERE 
-	description ILIKE '%kill%' 
-	OR
-	description ILIKE '%violence%'
 
 SELECT 
 	Category, 
